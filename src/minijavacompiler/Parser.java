@@ -78,7 +78,7 @@ public class Parser
 
     private void error(EnumToken t) 
     {
-            if (lToken.name != EnumToken.NULL) 
+            if (lToken.name != EnumToken.NULL && lToken.numberLine != 0) 
             {
 
                     if (t == EnumToken.ID) 
@@ -284,19 +284,22 @@ public class Parser
                     }
                     MainWindow.areaParaExibir.setText(Erros);
             } else {
-                    Erros = Erros + ("Erro semantico na linha" + lToken.numberLine);
-                    Erros = (Erros + '\n');
-                    MainWindow.areaParaExibir.setText(Erros);
-                    System.err.println("Erro semantico na linha" + lToken.numberLine);
+//                    Erros = Erros + ("Erro semantico na linha" + lToken.numberLine);
+//                    Erros = (Erros + '\n');
+//                    MainWindow.areaParaExibir.setText(Erros);
+//                    System.err.println("Erro semantico na linha" + lToken.numberLine);
             }
 
     }
 
     private void error(String conjunto) 
     {
-        Erros = Erros + ("linha " + lToken.numberLine + ": " + lToken.name + ",mas espera-se " + conjunto);
-        Erros = (Erros + '\n');
-        System.err.println("linha " + lToken.numberLine + ": " + lToken.name + ",mas espera-se " + conjunto);
+        if (lToken.name != EnumToken.NULL && lToken.numberLine != 0) 
+        {
+            Erros = Erros + ("linha " + lToken.numberLine + ": " + lToken.name + ",mas espera-se " + conjunto);
+            Erros = (Erros + '\n');
+            System.err.println("linha " + lToken.numberLine + ": " + lToken.name + ",mas espera-se " + conjunto);
+        }
     }
 
     // 1 - nao precisa

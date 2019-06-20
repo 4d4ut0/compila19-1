@@ -305,8 +305,12 @@ public class Parser
     // 1 - nao precisa
     public void program() 
     {
-        System.out.println("Linha 1");
-        ClassList();
+        //System.out.println("Linha 1");
+        if(lToken.name == EnumToken.CLASS)
+        {
+            ClassList();
+        }
+        
         //globalTable.imprime();
     }
 

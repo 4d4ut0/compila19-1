@@ -73,7 +73,7 @@ public class Scanner
         contador = 0;	
         nowtok = previous;  
         Token tok = new Token(EnumToken.UNDEF);   
-        
+        tok.numberLine = cont;
         String lexema = ""; 
         
         if (inputIt.getIndex() >= inputIt.getEndIndex())  

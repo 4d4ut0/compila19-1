@@ -487,7 +487,7 @@ public class Parser
         }
         else
         {
-            error(EnumToken.LBRACKET);
+            error("ID ou [");
         }
     }
 
@@ -1104,8 +1104,9 @@ public class Parser
             match(lToken.name);
             if(lToken.name == EnumToken.LPARENT)
             {
+                                    System.out.println("linha:-----" + lToken.numberLine);
                 match(lToken.name);
-                AtribStatOpt();
+                                    System.out.println("linha:-----" + lToken.numberLine);
                 if(lToken.name == EnumToken.COMMAPOINT)
                 {
                     match(lToken.name);
@@ -1143,10 +1144,11 @@ public class Parser
                     else
                     {
                        error(EnumToken.COMMAPOINT);
-                    }
+                    }                  
                 }
                 else
                 {
+
                     error(EnumToken.COMMAPOINT);
                 }
             }
@@ -1164,6 +1166,7 @@ public class Parser
     //42 - no error
     public void AtribStatOpt()
     {
+        System.err.println("linha " + lToken.numberLine + ": " + lToken.name + ",mas espera-se ");
         if(lToken.name == EnumToken.ID)
         {
             AtribStat();

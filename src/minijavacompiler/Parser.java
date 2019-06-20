@@ -971,7 +971,7 @@ public class Parser
         if(lToken.name == EnumToken.READ)
         {
             match(lToken.name);
-            Expression();
+            LValue();
         }
         else
         {

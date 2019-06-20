@@ -292,303 +292,11 @@ public class Parser
 
     }
 
-    private void error(String linha) 
+    private void error(String conjunto) 
     {
-            // linha 1
-            if (linha.equals("Program")) 
-            {
-
-            }
-            // linha 2
-            else if (linha.equals("ClassList")) 
-            {
-
-            }
-            // linha 3
-            else if (linha.equals("ClassList_line")) 
-            {
-
-            }
-            // linha 4
-            else if (linha.equals("ClassDecl")) 
-            {
-
-            }
-            // linha 5
-            else if (linha.equals("ClassBody_line")) 
-            {
-
-            }
-            // linha 6
-            else if (linha.equals("ClassBody")) 
-            {
-
-            }
-            // linha 7
-            else if (linha.equals("VarDeclListOpt")) 
-            {
-
-            }
-            // linha 8
-            else if (linha.equals("VarDeclList")) 
-            {
-
-            }
-            // linha 9
-            else if (linha.equals("VarDeclList_line")) 
-            {
-
-            }
-            // linha 10
-            else if (linha.equals("VarDecl")) 
-            {
-
-            }
-            // linha 11
-            else if (linha.equals("VarDecl_line")) 
-            {
-
-            }
-            // linha 12
-            else if (linha.equals("VarDeclOpt")) 
-            {
-
-            }
-            // linha 13
-            else if (linha.equals("Type")) 
-            {
-
-            }
-            // linha 14
-            else if (linha.equals("ConstructDeclListOpt")) 
-            {
-
-            }
-            // linha 15
-            else if (linha.equals("ConstructDeclList")) 
-            {
-
-            }
-            // linha 16
-            else if (linha.equals("ConstructDeclList_line")) 
-            {
-
-            }
-            // linha 17
-            else if (linha.equals("ConstructDecl")) 
-            {
-
-            }
-            // linha 18
-            else if (linha.equals("MethodDeclListOpt")) 
-            {
-
-            }
-            // linha 19
-            else if (linha.equals("MethodDeclList")) 
-            {
-
-            }
-            // linha 20
-            else if (linha.equals("MethodDeclList_line")) 
-            {
-
-            }
-            // linha 21
-            else if (linha.equals("MethodDecl")) 
-            {
-
-            }
-            // linha 22
-            else if (linha.equals("MethodDecl_line")) 
-            {
-
-            }
-            // linha 23
-            else if (linha.equals("MethodBody")) 
-            {
-
-            }
-            // linha 24
-            else if (linha.equals("ParamListOpt")) 
-            {
-
-            }
-            // linha 25
-            else if (linha.equals("ParamList")) 
-            {
-
-            }
-            // linha 26
-            else if (linha.equals("ParamList_line")) 
-            {
-
-            }
-            // linha 27
-            else if (linha.equals("Param")) 
-            {
-
-            }
-            // linha 28
-            else if (linha.equals("Param_line")) 
-            {
-
-            }
-            // linha 29
-            else if (linha.equals("StatementsOpt")) 
-            {
-
-            }
-            // linha 30
-            else if (linha.equals("Statements")) 
-            {
-
-            }
-            // linha 31
-            else if (linha.equals("Statements_line")) 
-            {
-
-            }
-            // linha 32
-            else if (linha.equals("Statement")) 
-            {
-
-            }
-            // linha 33
-            else if (linha.equals("AtribStat")) 
-            {
-
-            }
-            // linha 34
-            else if (linha.equals("AtribStat_line")) 
-            {
-
-            }
-            // linha 35
-            else if (linha.equals("PrintStat")) 
-            {
-
-            }
-            // linha 36
-            else if (linha.equals("ReadStat")) 
-            {
-
-            }
-            // linha 37
-            else if (linha.equals("ReturnStat")) 
-            {
-
-            }
-            // linha 38
-            else if (linha.equals("SuperStat")) 
-            {
-
-            }
-            // linha 39
-            else if (linha.equals("IfStat")) 
-            {
-
-            }
-            // linha 40
-            else if (linha.equals("IfStat_line")) 
-            {
-
-            }
-            // linha 41
-            else if (linha.equals("ForStat")) 
-            {
-
-            }
-            // linha 42
-            else if (linha.equals("AtribStatOpt")) 
-            {
-
-            }
-            // linha 43
-            else if (linha.equals("ExpressionOpt")) 
-            {
-
-            }
-            // linha 44
-            else if (linha.equals("LValue")) 
-            {
-
-            }
-            // linha 45
-            else if (linha.equals("LValue_line")) 
-            {
-
-            }
-            // linha 46
-            else if (linha.equals("LValueComp")) 
-            {
-
-            }
-            // linha 47
-            else if (linha.equals("LValueComp_line")) 
-            {
-
-            }
-            // linha 48
-            else if (linha.equals("Expression")) 
-            {
-
-            }
-            // linha 49
-            else if (linha.equals("Expression_line")) 
-            {
-
-            }
-            // linha 50
-            else if (linha.equals("AllocExpression")) 
-            {
-
-            }
-            // linha 51
-            else if (linha.equals("NumExpression")) 
-            {
-
-            }
-            // linha 52
-            else if (linha.equals("NumExpression_line")) 
-            {
-
-            }
-            // linha 53
-            else if (linha.equals("Term")) 
-            {
-
-            }
-            // linha 54
-            else if (linha.equals("Term_line")) 
-            {
-
-            }
-            // linha 55
-            else if (linha.equals("UnaryExpression")) 
-            {
-
-            }
-            // linha 56
-            else if (linha.equals("Factor")) 
-            {
-
-            }
-            // linha 57
-            else if (linha.equals("ArgListOpt")) 
-            {
-
-            }
-            // linha 58
-            else if (linha.equals("ArgList")) 
-            {
-
-            }
-            // linha 59
-            else if (linha.equals("ArgList_line")) 
-            {
-
-            }
+        Erros = Erros + ("� " + lToken.name + ",mas espera-se " + conjunto);
+        Erros = (Erros + '\n');
+        System.err.println("� " + lToken.name + ",mas espera-se " + conjunto);
     }
 
     // 1 - nao precisa
@@ -596,17 +304,17 @@ public class Parser
     {
         System.out.println("Linha 1");
         ClassList();
-        globalTable.imprime();
+        //globalTable.imprime();
     }
 
-    //2 -
+    //2 - no error
     public void ClassList()
     {
         ClassDecl();
         ClassList_line();
     }
 
-    //3 -
+    //3 - epsulon
     public void ClassList_line()
     {
         if(lToken.name == EnumToken.CLASS)
@@ -615,7 +323,7 @@ public class Parser
         //epsolon
     }
 
-    //4 -
+    //4 - error_2
     public void ClassDecl()
     {
         if(lToken.name == EnumToken.CLASS)
@@ -629,17 +337,17 @@ public class Parser
 
             else
             {
-                //erro
+                error(EnumToken.ID);
             }
         }
 
         else
         {
-            //erro
+            error(EnumToken.CLASS);
         }
     }
 
-    //5 -
+    //5 - error_propagado
     public void ClassBody_line()
     {
         if(lToken.name == EnumToken.EXTENDS)
@@ -652,7 +360,7 @@ public class Parser
             }
             else
             {
-                //erro
+                error(EnumToken.ID);
             }
         }
 
@@ -662,7 +370,7 @@ public class Parser
         }
     }
 
-    //6 -
+    //6 - error_2
     public void ClassBody()
     {
         if(lToken.name == EnumToken.LBRACE)
@@ -678,16 +386,16 @@ public class Parser
             }
             else
             {
-                //erro
+                error(EnumToken.RBRACE);
             }
         }
         else
         {
-            //erro
+            error(EnumToken.LBRACE);
         }
     }
 
-    //7 -
+    //7 - epsulon
     public void VarDeclListOpt()
     {
         if(lToken.name == EnumToken.INT  || lToken.name == EnumToken.STRING || lToken.name == EnumToken.ID)
@@ -698,14 +406,14 @@ public class Parser
         //epsulon
     }
 
-    //8 -
+    //8 - no error
     public void VarDeclList()
     {
         VarDecl();
         VarDeclList_line();
     }
 
-    //9 -
+    //9 - epsulon
     public void VarDeclList_line()
     {
         if(lToken.name == EnumToken.INT  || lToken.name == EnumToken.STRING || lToken.name == EnumToken.ID)
@@ -717,14 +425,14 @@ public class Parser
         //epsulon
     }
 
-    //10 -
+    //10 - no error
     public void VarDecl()
     {
         Type();
         VarDecl_line();
     }
 
-    //11 -
+    //11 - error_1_4
     public void VarDecl_line()
     {
         if(lToken.name == EnumToken.ID)
@@ -737,7 +445,7 @@ public class Parser
             }
             else
             {
-                //erro
+                error(EnumToken.COMMAPOINT);
             }
         }
 
@@ -757,26 +465,26 @@ public class Parser
                     }
                     else
                     {
-                        //erro
+                        error(EnumToken.COMMAPOINT);
                     }
                 }
                 else
                 {
-                    //erro
+                    error(EnumToken.ID);
                 }
             }
             else
             {
-                //erro
+                error(EnumToken.RBRACKET);
             }
         }
         else
         {
-            //erro
+            error(EnumToken.LBRACKET);
         }
     }
 
-    //12 -
+    //12 - epsulon
     public void VarDeclOpt()
     {
        if(lToken.name == EnumToken.COMMA)
@@ -789,12 +497,14 @@ public class Parser
            }
            else
            {
-               //erro
+               error(EnumToken.ID);
            }
        }
+       
+       //epsulon
     }
 
-    //13 -
+    //13 - error generico
     public void Type()
     {
         if(lToken.name == EnumToken.INT ||lToken.name == EnumToken.STRING || lToken.name == EnumToken.ID )
@@ -803,11 +513,11 @@ public class Parser
         }
         else
         {
-            //erro
+            error("INT || STRING || ID");
         }
     }
 
-    //14 -
+    //14 - epsulon
     public void ConstructDeclListOpt()
     {
         if(lToken.name == EnumToken.CONSTRUCTOR)
@@ -818,14 +528,14 @@ public class Parser
         //epsulon
     }
 
-    //15 -
+    //15 - no error
     public void ConstructDeclList()
     {
         ConstructDecl();
         ConstructDeclList_line();
     }
 
-    //16 -
+    //16 - epsulon
     public void ConstructDeclList_line()
     {
         if(lToken.name == EnumToken.CONSTRUCTOR)
@@ -837,7 +547,7 @@ public class Parser
         //epsulon
     }
 
-    //17 -
+    //17 - error_1
     public void ConstructDecl()
     {
        if(lToken.name == EnumToken.CONSTRUCTOR)
@@ -847,11 +557,11 @@ public class Parser
        }
        else
        {
-           //erro
+           error(EnumToken.CONSTRUCTOR);
        }
     }
 
-    //18 -
+    //18 - epsulon
     public void MethodDeclListOpt()
     {
         if(lToken.name == EnumToken.INT ||lToken.name == EnumToken.STRING || lToken.name == EnumToken.ID )
@@ -862,7 +572,7 @@ public class Parser
         //epsulon
     }
 
-    //19 -
+    //19 - error generico
     public void MethodDeclList()
     {
         if(lToken.name == EnumToken.INT ||lToken.name == EnumToken.STRING || lToken.name == EnumToken.ID )
@@ -873,11 +583,11 @@ public class Parser
 
         else
         {
-            //erro
+            error("INT || STRING || ID");
         }
     }
 
-    //20 -
+    //20 - epsulon
     public void MethodDeclList_line()
     {
         if(lToken.name == EnumToken.INT ||lToken.name == EnumToken.STRING || lToken.name == EnumToken.ID )
@@ -889,7 +599,7 @@ public class Parser
         //epsulon
     }
 
-    //21 -
+    //21 - error generico
     public void MethodDecl()
     {
         if(lToken.name == EnumToken.INT ||lToken.name == EnumToken.STRING || lToken.name == EnumToken.ID )
@@ -899,11 +609,11 @@ public class Parser
         }
         else
         {
-            //erro
+            error("INT || STRING || ID");
         }
     }
 
-    //22 -
+    //22 - error_3
     public void MethodDecl_line()
     {
         if(lToken.name == EnumToken.ID)
@@ -924,21 +634,21 @@ public class Parser
                 }
                 else
                 {
-                    //erro
+                    error(EnumToken.ID);
                 }
             }
             else
             {
-                //erro
+                error(EnumToken.RBRACKET);
             }
         }
         else
         {
-            //erro
+            error(EnumToken.LBRACKET);
         } 
     }
 
-    //23 -
+    //23 - error_4
     public void MethodBody()
     {
         if(lToken.name == EnumToken.LPARENT)
@@ -958,26 +668,26 @@ public class Parser
                     }
                     else
                     {
-                        //erro
+                        error(EnumToken.RBRACE);
                     }
                 }
                 else
                 {
-                    //erro
+                    error(EnumToken.LBRACE);
                 }
             }
             else
             {
-                //erro
+                error(EnumToken.RPARENT);
             }
         }
         else 
         {
-            //erro
+            error(EnumToken.LPARENT);
         }
     }
 
-    //24 -
+    //24 - epsulon
     public void ParamListOpt()
     {
         if(lToken.name == EnumToken.INT ||lToken.name == EnumToken.STRING || lToken.name == EnumToken.ID )
@@ -988,7 +698,7 @@ public class Parser
         //epsulon
     }
 
-    //25 -
+    //25 - error generico
     public void ParamList()
     {
         if(lToken.name == EnumToken.INT ||lToken.name == EnumToken.STRING || lToken.name == EnumToken.ID )
@@ -998,11 +708,11 @@ public class Parser
         }
         else
         {
-            //erro
+            error("INT || STRING || ID");
         }
     }
 
-    //26 -
+    //26 - epsulon
     public void ParamList_line()
     {
         if(lToken.name == EnumToken.COMMA)
@@ -1015,7 +725,7 @@ public class Parser
         //epsulon
     }
 
-    //27 -
+    //27 - error generico
     public void Param()
     {
         if(lToken.name == EnumToken.INT ||lToken.name == EnumToken.STRING || lToken.name == EnumToken.ID )
@@ -1025,11 +735,11 @@ public class Parser
         }
         else
         {
-            //erro
+            error("INT || STRING || ID");
         }
     }
 
-    //28 -
+    //28 - error generico
     public void Param_line()
     {
         if(lToken.name == EnumToken.ID)
@@ -1048,21 +758,21 @@ public class Parser
                 }
                 else
                 {
-                    //erro
+                    error(EnumToken.ID);
                 }
             }
             else
             {
-                //erro
+                error(EnumToken.RBRACKET);
             }
         }
         else
         {
-            //erro
+            error("ID || [");
         } 
     }
 
-    //29 -
+    //29 - epsulon
     public void StatementsOpt()
     {
         if(lToken.name == EnumToken.INT ||lToken.name == EnumToken.STRING 
@@ -1078,14 +788,14 @@ public class Parser
         //epsulon
     }
 
-    //30 -
+    //30 - no error
     public void Statements()
     {
         Statement();
         Statements_line();
     }
 
-    //31 -
+    //31 - epsulon
     public void Statements_line()
     {
         if(lToken.name == EnumToken.INT ||lToken.name == EnumToken.STRING 
@@ -1102,7 +812,7 @@ public class Parser
         //epsulon
     }
 
-    //32 -
+    //32 - ERROR GENERICO
     public void Statement()
     {
         if(lToken.name == EnumToken.INT ||lToken.name == EnumToken.STRING)
@@ -1127,7 +837,7 @@ public class Parser
             }
             else
             {
-                //erro
+                error(EnumToken.COMMAPOINT);
             }
         }
 
@@ -1140,7 +850,7 @@ public class Parser
             }
             else
             {
-                //erro
+                error(EnumToken.COMMAPOINT);
             }
         }
 
@@ -1153,7 +863,7 @@ public class Parser
             }
             else
             {
-                //erro
+                error(EnumToken.COMMAPOINT);
             }
         }
 
@@ -1166,7 +876,7 @@ public class Parser
             }
             else
             {
-                //erro
+                error(EnumToken.COMMAPOINT);
             }
         }
 
@@ -1189,7 +899,7 @@ public class Parser
             }
             else
             {
-                //erro
+                error(EnumToken.COMMAPOINT);
             }
         }
 
@@ -1200,11 +910,11 @@ public class Parser
 
         else
         {
-            //erro
+            error("INT || STRING || ID || PRINT || READ || RETURN || SUPER || IF || FOR || BREAK");
         }
     }
 
-    //33 -
+    //33 - error_1
     public void AtribStat()
     {
         LValue();
@@ -1215,7 +925,7 @@ public class Parser
         }
         else
         {
-            //erro
+            error(EnumToken.ATTRIB);
         }
     }
 
@@ -1234,11 +944,11 @@ public class Parser
 
         else
         {
-            //erro
+            error("+ || -");
         }
     }
 
-    //35 -
+    //35 - error_1
     public void PrintStat()
     {
         if(lToken.name == EnumToken.PRINT)
@@ -1248,11 +958,11 @@ public class Parser
         }
         else
         {
-            //erro
+            error(EnumToken.PRINT);
         }
     }
 
-    //36 -
+    //36 - error_1
     public void ReadStat()
     {
         if(lToken.name == EnumToken.READ)
@@ -1262,11 +972,11 @@ public class Parser
         }
         else
         {
-            //erro
+            error(EnumToken.READ);
         }
     }
 
-    //37 -
+    //37 - error_1
     public void ReturnStat()
     {
         if(lToken.name == EnumToken.RETURN)
@@ -1276,11 +986,11 @@ public class Parser
         }
         else
         {
-            //erro
+            error(EnumToken.RETURN);
         }
     }
 
-    //38 -
+    //38 - error_3
     public void SuperStat()
     {
         if(lToken.name == EnumToken.SUPER)
@@ -1296,21 +1006,21 @@ public class Parser
                  }
                  else
                  {
-                     //erro
+                     error(EnumToken.RPARENT);
                  }
             }
             else
             {
-                //erro
+                error(EnumToken.LPARENT);
             }
         }
         else
         {
-            //erro
+            error(EnumToken.SUPER);
         }
     }
 
-    //39 -
+    //39 - error_5
     public void IfStat()
     {
         if(lToken.name == EnumToken.IF)
@@ -1334,31 +1044,31 @@ public class Parser
                         }
                         else
                         {
-                            //erro
+                            error(EnumToken.RBRACE);
                         }
                     }
                     else
                     {
-                        //erro
+                        error(EnumToken.LBRACE);
                     }
                 }
                 else
                 {
-                    //erro
+                   error(EnumToken.RPARENT);
                 }
             }
             else
             {
-                //erro
+                error(EnumToken.LPARENT);
             }
         }
         else
         {
-            //erro
+            error(EnumToken.IF);
         }
     }
 
-    //40 -
+    //40 -error_2 epsulon
     public void IfStat_line()
     {
         if(lToken.name == EnumToken.ELSE)
@@ -1374,19 +1084,19 @@ public class Parser
                 }
                 else
                 {
-                    //erro
+                    error(EnumToken.RBRACE);
                 }
             }
             else
             {
-                //erro
+                error(EnumToken.LBRACE);
             }
         }
 
         //epsulon
     }
 
-    //41 -
+    //41 - error_7
     public void ForStat()
     {
         if(lToken.name == EnumToken.FOR)
@@ -1417,41 +1127,41 @@ public class Parser
                                 }
                                 else
                                 {
-                                    //erro
+                                    error(EnumToken.RBRACE);
                                 }
                             }
                             else
                             {
-                                //erro
+                                error(EnumToken.LBRACE);
                             }
                         }
                         else
                         {
-                            //erro
+                            error(EnumToken.RPARENT);
                         }
                     }
                     else
                     {
-                         //erro
+                       error(EnumToken.COMMAPOINT);
                     }
                 }
                 else
                 {
-                    //erro
+                    error(EnumToken.COMMAPOINT);
                 }
             }
             else
             {
-                //erro
+                error(EnumToken.LPARENT);
             }
         }
         else
         {
-            //erro
+            error(EnumToken.FOR);
         }
     }
 
-    //42 -
+    //42 - no error
     public void AtribStatOpt()
     {
         if(lToken.name == EnumToken.ID)
@@ -1460,7 +1170,7 @@ public class Parser
         }
     }
 
-    //43 -
+    //43 - no error
     public void ExpressionOpt()
     {
         if(lToken.name == EnumToken.PLUS || lToken.name == EnumToken.MINUS)
@@ -1469,7 +1179,7 @@ public class Parser
         }
     }
 
-    //44 -
+    //44 - error_1
     public void LValue()
     {
         if(lToken.name == EnumToken.ID)
@@ -1479,11 +1189,11 @@ public class Parser
         }
         else
         {
-            //erro
+            error(EnumToken.ID);
         }
     }
 
-    //45 -
+    //45 - error generico
     public void LValue_line()
     {
         if(lToken.name == EnumToken.LBRACKET)
@@ -1497,7 +1207,7 @@ public class Parser
             }
             else
             {
-                //erro
+                error(EnumToken.RBRACKET);
             }
         }
         else if(lToken.name == EnumToken.POINT || lToken.name == EnumToken.ATTRIB ||
@@ -1511,11 +1221,11 @@ public class Parser
         }
         else
         {
-            //erro
+            error("[ || . || = || * || / || % || + || - || RELOP || ) || ] || , || ;");
         }
     }
 
-    //46 -
+    //46 - error_1 epsulon
     public void LValueComp()
     {
         if(lToken.name == EnumToken.POINT)
@@ -1528,7 +1238,7 @@ public class Parser
             }
             else
             {
-                //erro
+                error(EnumToken.ID);
             }
         }
 
@@ -1541,14 +1251,14 @@ public class Parser
 
     }*/
 
-    //48 -
+    //48 - no error
     public void Expression()
     {
         NumExpression();
         NumExpression_line();
     }
 
-    //49 -
+    //49 - epsulon
     public void Expression_line()
     {
         if(lToken.name == EnumToken.RELOP)
@@ -1560,7 +1270,7 @@ public class Parser
         //epsulon
     }
 
-    //50 -
+    //50 - error generico
     public void AllocExpression()
     {
         if(lToken.name == EnumToken.NEW)
@@ -1579,17 +1289,17 @@ public class Parser
                     }
                     else
                     {
-                        //erro
+                        error(EnumToken.RPARENT);
                     }
                 }
                 else
                 {
-                    //erro
+                    error(EnumToken.LPARENT);
                 }
             }
             else
             {
-                //erro
+                error(EnumToken.ID);
             }
         }
         else if(lToken.name == EnumToken.INT ||lToken.name == EnumToken.STRING || lToken.name == EnumToken.ID )
@@ -1605,28 +1315,28 @@ public class Parser
                 }
                 else
                 {
-                    //erro
+                    error(EnumToken.RBRACKET);
                 }
             }
             else
             {
-                //erro
+                error(EnumToken.LBRACKET);
             }
         }
         else
         {
-
+            error("NEW || INT || STRING || ID");
         }
     }
 
-    //51 -
+    //51 - no error 
     public void NumExpression()
     {
         Term();
         NumExpression_line();
     }
 
-    //52 -
+    //52 - epsulon
     public void NumExpression_line()
     {
         if(lToken.name == EnumToken.PLUS || lToken.name == EnumToken.MINUS || lToken.name == EnumToken.RELOP)
@@ -1638,14 +1348,14 @@ public class Parser
         //epsulon
     }
 
-    //53 -
+    //53 - no error
     public void Term()
     {
         UnaryExpression();
         Term_line();
     }
 
-    //54 -
+    //54 - epsulon
     public void Term_line()
     {
         if(lToken.name == EnumToken.MULT || lToken.name == EnumToken.DIV || lToken.name == EnumToken.MOD)
@@ -1657,7 +1367,7 @@ public class Parser
         //epsulon
     }
 
-    //55 -
+    //55 - error generico
     public void UnaryExpression()
     {
         if(lToken.name == EnumToken.PLUS || lToken.name == EnumToken.MINUS)
@@ -1667,11 +1377,11 @@ public class Parser
         }
         else
         {
-            //erro
+            error("+ || -");
         }
     }
 
-    //56 -
+    //56 - error generico
     public void Factor()
     {
         if(lToken.name == EnumToken.INTERGER_LITERAL || lToken.name == EnumToken.STRING_LITERAL)
@@ -1692,16 +1402,16 @@ public class Parser
             }
             else
             {
-                //erro
+                error(EnumToken.RPARENT);
             }
         }
         else
         {
-            //erro
+            error("INTEGER_LITERAL || STRING_LITERAL || ID || (");
         }
     }
 
-    //57 -
+    //57 - epsulon
     public void ArgListOpt()
     {
         if(lToken.name == EnumToken.PLUS || lToken.name == EnumToken.MINUS)
@@ -1712,14 +1422,14 @@ public class Parser
         //epsulon
     }
 
-    //58 -
+    //58 - no error
     public void ArgList()
     {
         Expression();
         ArgList_line();
     }
 
-    //59 -
+    //59 - error_1
     public void ArgList_line()
     {
         if(lToken.name == EnumToken.COMMA)
@@ -1730,11 +1440,11 @@ public class Parser
         }
         else
         {
-            //erro
+            error(EnumToken.COMMA);
         }
     }
 
-    //60 -
+    //60 - erro generico
     public void Id_line()
     {
         if(lToken.name == EnumToken.ID)
@@ -1748,7 +1458,7 @@ public class Parser
             }
             else
             {
-                //erro
+                error(EnumToken.COMMAPOINT);
             }
         }
         else if(lToken.name == EnumToken.LBRACKET)
@@ -1768,12 +1478,12 @@ public class Parser
                     }
                     else
                     {
-                        //erro
+                        error(EnumToken.COMMAPOINT);
                     }
                 }
                 else
                 {
-                    //erro
+                    error(EnumToken.ID);
                 }
             }
             else if(lToken.name == EnumToken.PLUS ||lToken.name == EnumToken.MINUS)
@@ -1793,23 +1503,23 @@ public class Parser
                         }
                         else
                         {
-                            //erro
+                            error(EnumToken.COMMAPOINT);
                         }
                     }
                     else
                     {
-                        //erro
+                        error(EnumToken.ATTRIB);
                     }
 
                 }
                 else
                 {
-                    //erro
+                    error(EnumToken.RBRACKET);
                 }
             }
             else
             {
-                //erro
+                error("} || + || -");
             }
         }
         else if(lToken.name == EnumToken.COMMA)
@@ -1825,17 +1535,17 @@ public class Parser
                 }
                 else
                 {
-                    //erro
+                    error(EnumToken.COMMAPOINT);
                 }
             }
             else
             {
-                //erro
+                error(EnumToken.ATTRIB);
             }
         }
         else
         {
-            //erro
+            error("ID || { || ,");
         }
     }
 }

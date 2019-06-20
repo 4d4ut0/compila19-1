@@ -704,15 +704,8 @@ public class Parser
     //25 - error generico
     public void ParamList()
     {
-        if(lToken.name == EnumToken.INT ||lToken.name == EnumToken.STRING || lToken.name == EnumToken.ID )
-        { 
-            Param();
-            Param_line();
-        }
-        else
-        {
-            error("INT ou STRING ou ID");
-        }
+        Param();
+        ParamList_line();
     }
 
     //26 - epsulon
@@ -722,7 +715,7 @@ public class Parser
         { 
             match(lToken.name);
             Param();
-            Param_line();
+            ParamList_line();
         }
 
         //epsulon

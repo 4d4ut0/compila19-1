@@ -95,6 +95,7 @@ public class Scanner
                         {
                             cont++;
                             System.out.println("linha"+cont);
+                            tok.numberLine = cont;
                         }
                         inputIt.next(); 
                         contador++;

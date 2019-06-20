@@ -85,201 +85,201 @@ public class Parser
                     {
 
                             Erros = Erros
-                                            + ("� " + lToken.name + ",mas espera-se " + t.name());
+                                            + ("linha " + lToken.numberLine + ": "+ lToken.name + ",mas espera-se " + t.name());
                             Erros = (Erros + '\n');
 
-                            System.err.println("� " + lToken.name + ",mas espera-se "
+                            System.err.println("linha " + lToken.numberLine + ": "+ lToken.name + ",mas espera-se "
                                             + t.name());
 
                     } else if (t == EnumToken.RELOP) {
 
                             Erros = Erros
-                                            + ("� " + lToken.name + ",mas espera-se " + t.name());
+                                            + ("linha " + lToken.numberLine + ": " + lToken.name + ",mas espera-se " + t.name());
                             Erros = (Erros + '\n');
 
-                            System.err.println("� " + lToken.name + ",mas espera-se "
+                            System.err.println("linha " + lToken.numberLine + ": " + lToken.name + ",mas espera-se "
                                             + t.name());
                     } else if (t == EnumToken.ASSIGNMENT) {
                             Erros = Erros
-                                            + ("� " + lToken.name + ",mas espera-se " + t.name());
+                                            + ("linha " + lToken.numberLine + ": " + lToken.name + ",mas espera-se " + t.name());
                             Erros = (Erros + '\n');
 
-                            System.err.println("� " + lToken.name + ",mas espera-se "
+                            System.err.println("linha " + lToken.numberLine + ": " + lToken.name + ",mas espera-se "
                                             + t.name());
                     } else if (t == EnumToken.ADDOP) {
                             Erros = Erros
-                                            + ("� " + lToken.name + ",mas espera-se " + t.name());
+                                            + ("linha " + lToken.numberLine + ": " + lToken.name + ",mas espera-se " + t.name());
                             Erros = (Erros + '\n');
 
-                            System.err.println("� " + lToken.name + ",mas espera-se "
+                            System.err.println("linha " + lToken.numberLine + ": " + lToken.name + ",mas espera-se "
                                             + t.name());
                     } else if (t == EnumToken.MULOP) {
                             Erros = Erros
-                                            + ("� " + lToken.name + ",mas espera-se " + t.name());
+                                            + ("linha " + lToken.numberLine + ": " + lToken.name + ",mas espera-se " + t.name());
                             Erros = (Erros + '\n');
 
-                            System.err.println("� " + lToken.name + ",mas espera-se "
+                            System.err.println("linha " + lToken.numberLine + ": " + lToken.name + ",mas espera-se "
                                             + t.name());
                     } else if (t == EnumToken.UNARYOP) {
                             Erros = Erros
-                                            + ("� " + lToken.name + ",mas espera-se " + t.name());
+                                            + ("linha " + lToken.numberLine + ": " + lToken.name + ",mas espera-se " + t.name());
                             Erros = (Erros + '\n');
 
-                            System.err.println("� " + lToken.name + ",mas espera-se "
+                            System.err.println("linha " + lToken.numberLine + ": " + lToken.name + ",mas espera-se "
                                             + t.name());
                     } else if (t == EnumToken.INTERGER_LITERAL) {
                             Erros = Erros
-                                            + ("� " + lToken.name + ",mas espera-se " + t.name());
+                                            + ("linha " + lToken.numberLine + ": " + lToken.name + ",mas espera-se " + t.name());
                             Erros = (Erros + '\n');
 
-                            System.err.println("� " + lToken.name + ",mas espera-se "
+                            System.err.println("linha " + lToken.numberLine + ": " + lToken.name + ",mas espera-se "
                                             + t.name());
                     } else if (t == EnumToken.DOUBLE_LITERAL) {
                             Erros = Erros
-                                            + ("� " + lToken.name + ",mas espera-se " + t.name());
+                                            + ("linha " + lToken.numberLine + ": " + lToken.name + ",mas espera-se " + t.name());
                             Erros = (Erros + '\n');
 
-                            System.err.println("� " + lToken.name + ",mas espera-se "
+                            System.err.println("linha " + lToken.numberLine + ": " + lToken.name + ",mas espera-se "
                                             + t.name());
                     } else if (t == EnumToken.INT) {
                             Erros = Erros
-                                            + ("� " + lToken.name + ",mas espera-se " + t.name());
+                                            + ("linha " + lToken.numberLine + ": " + lToken.name + ",mas espera-se " + t.name());
                             Erros = (Erros + '\n');
 
-                            System.err.println("� " + lToken.name + ",mas espera-se "
+                            System.err.println("linha " + lToken.numberLine + ": " + lToken.name + ",mas espera-se "
                                             + t.name());
                     } else if (t == EnumToken.DOUBLE) {
                             Erros = Erros
-                                            + ("� " + lToken.name + ",mas espera-se " + t.name());
+                                            + ("linha " + lToken.numberLine + ": " + lToken.name + ",mas espera-se " + t.name());
                             Erros = (Erros + '\n');
 
-                            System.err.println("� " + lToken.name + ",mas espera-se "
+                            System.err.println("linha " + lToken.numberLine + ": " + lToken.name + ",mas espera-se "
                                             + t.name());
                     } else if (t == EnumToken.VOID) {
                             Erros = Erros
-                                            + ("� " + lToken.name + ",mas espera-se " + t.name());
+                                            + ("linha " + lToken.numberLine + ": " + lToken.name + ",mas espera-se " + t.name());
                             Erros = (Erros + '\n');
 
-                            System.err.println("� " + lToken.name + ",mas espera-se "
+                            System.err.println("linha " + lToken.numberLine + ": " + lToken.name + ",mas espera-se "
                                             + t.name());
                     } else if (t == EnumToken.BOOL) {
                             Erros = Erros
-                                            + ("� " + lToken.name + ",mas espera-se " + t.name());
+                                            + ("linha " + lToken.numberLine + ": " + lToken.name + ",mas espera-se " + t.name());
                             Erros = (Erros + '\n');
 
-                            System.err.println("� " + lToken.name + ",mas espera-se "
+                            System.err.println("linha " + lToken.numberLine + ": " + lToken.name + ",mas espera-se "
                                             + t.name());
                     } else if (t == EnumToken.IF) {
                             Erros = Erros
-                                            + ("� " + lToken.name + ",mas espera-se " + t.name());
+                                            + ("linha " + lToken.numberLine + ": " + lToken.name + ",mas espera-se " + t.name());
                             Erros = (Erros + '\n');
 
-                            System.err.println("� " + lToken.name + ",mas espera-se "
+                            System.err.println("linha " + lToken.numberLine + ": " + lToken.name + ",mas espera-se "
                                             + t.name());
                     } else if (t == EnumToken.ELSE) {
                             Erros = Erros
-                                            + ("� " + lToken.name + ",mas espera-se " + t.name());
+                                            + ("linha " + lToken.numberLine + ": " + lToken.name + ",mas espera-se " + t.name());
                             Erros = (Erros + '\n');
 
-                            System.err.println("� " + lToken.name + ",mas espera-se "
+                            System.err.println("linha " + lToken.numberLine + ": " + lToken.name + ",mas espera-se "
                                             + t.name());
                     } else if (t == EnumToken.WHILE) {
                             Erros = Erros
-                                            + ("� " + lToken.name + ",mas espera-se " + t.name());
+                                            + ("linha " + lToken.numberLine + ": " + lToken.name + ",mas espera-se " + t.name());
                             Erros = (Erros + '\n');
 
-                            System.err.println("� " + lToken.name + ",mas espera-se "
+                            System.err.println("linha " + lToken.numberLine + ": " + lToken.name + ",mas espera-se "
                                             + t.name());
                     } else if (t == EnumToken.TRUE) {
                             Erros = Erros
-                                            + ("� " + lToken.name + ",mas espera-se " + t.name());
+                                            + ("linha " + lToken.numberLine + ": " + lToken.name + ",mas espera-se " + t.name());
                             Erros = (Erros + '\n');
 
-                            System.err.println("� " + lToken.name + ",mas espera-se "
+                            System.err.println("linha " + lToken.numberLine + ": " + lToken.name + ",mas espera-se "
                                             + t.name());
                     } else if (t == EnumToken.FALSE) {
                             Erros = Erros
-                                            + ("� " + lToken.name + ",mas espera-se " + t.name());
+                                            + ("linha " + lToken.numberLine + ": " + lToken.name + ",mas espera-se " + t.name());
                             Erros = (Erros + '\n');
 
-                            System.err.println("� " + lToken.name + ",mas espera-se "
+                            System.err.println("linha " + lToken.numberLine + ": " + lToken.name + ",mas espera-se "
                                             + t.name());
                     } else if (t == EnumToken.UNDEF) {
                             Erros = Erros
-                                            + ("� " + lToken.name + ",mas espera-se " + t.name());
+                                            + ("linha " + lToken.numberLine + ": " + lToken.name + ",mas espera-se " + t.name());
                             Erros = (Erros + '\n');
 
-                            System.err.println("� " + lToken.name + ",mas espera-se "
+                            System.err.println("linha " + lToken.numberLine + ": " + lToken.name + ",mas espera-se "
                                             + t.name());
                     } else if (t == EnumToken.RBRACE) {
                             Erros = Erros
-                                            + ("� " + lToken.name + ",mas espera-se " + t.name());
+                                            + ("linha " + lToken.numberLine + ": " + lToken.name + ",mas espera-se " + t.name());
                             Erros = (Erros + '\n');
 
-                            System.err.println("� " + lToken.name + ",mas espera-se "
+                            System.err.println("linha " + lToken.numberLine + ": " + lToken.name + ",mas espera-se "
                                             + t.name());
                     } else if (t == EnumToken.LBRACE) {
                             Erros = Erros
-                                            + ("� " + lToken.name + ",mas espera-se " + t.name());
+                                            + ("linha " + lToken.numberLine + ": " + lToken.name + ",mas espera-se " + t.name());
                             Erros = (Erros + '\n');
 
-                            System.err.println("� " + lToken.name + ",mas espera-se "
+                            System.err.println("linha " + lToken.numberLine + ": " + lToken.name + ",mas espera-se "
                                             + t.name());
                     } else if (t == EnumToken.RPARENT) {
                             Erros = Erros
-                                            + ("� " + lToken.name + ",mas espera-se " + t.name());
+                                            + ("linha " + lToken.numberLine + ": " + lToken.name + ",mas espera-se " + t.name());
                             Erros = (Erros + '\n');
 
-                            System.err.println("� " + lToken.name + ",mas espera-se "
+                            System.err.println("linha " + lToken.numberLine + ": " + lToken.name + ",mas espera-se "
                                             + t.name());
                     } else if (t == EnumToken.LPARENT) {
                             Erros = Erros
-                                            + ("� " + lToken.name + ",mas espera-se " + t.name());
+                                            + ("linha " + lToken.numberLine + ": " + lToken.name + ",mas espera-se " + t.name());
                             Erros = (Erros + '\n');
 
-                            System.err.println("� " + lToken.name + ",mas espera-se "
+                            System.err.println("linha " + lToken.numberLine + ": " + lToken.name + ",mas espera-se "
                                             + t.name());
                     } else if (t == EnumToken.RBRACKET) {
                             Erros = Erros
-                                            + ("� " + lToken.name + ",mas espera-se " + t.name());
+                                            + ("linha " + lToken.numberLine + ": " + lToken.name + ",mas espera-se " + t.name());
                             Erros = (Erros + '\n');
 
-                            System.err.println("� " + lToken.name + ",mas espera-se "
+                            System.err.println("linha " + lToken.numberLine + ": " + lToken.name + ",mas espera-se "
                                             + t.name());
                     } else if (t == EnumToken.LBRACKET) {
                             Erros = Erros
-                                            + ("� " + lToken.name + ",mas espera-se " + t.name());
+                                            + ("linha " + lToken.numberLine + ": " + lToken.name + ",mas espera-se " + t.name());
                             Erros = (Erros + '\n');
 
-                            System.err.println("� " + lToken.name + ",mas espera-se "
+                            System.err.println("linha " + lToken.numberLine + ": " + lToken.name + ",mas espera-se "
                                             + t.name());
                     } else if (t == EnumToken.COMMA) {
                             Erros = Erros
-                                            + ("� " + lToken.name + ",mas espera-se " + t.name());
+                                            + ("linha " + lToken.numberLine + ": " + lToken.name + ",mas espera-se " + t.name());
                             Erros = (Erros + '\n');
 
-                            System.err.println("� " + lToken.name + ",mas espera-se "
+                            System.err.println("linha " + lToken.numberLine + ": " + lToken.name + ",mas espera-se "
                                             + t.name());
                     } else if (t == EnumToken.COMMAPOINT) {
                             Erros = Erros
-                                            + ("� " + lToken.name + ",mas espera-se " + t.name());
+                                            + ("linha " + lToken.numberLine + ": " + lToken.name + ",mas espera-se " + t.name());
                             Erros = (Erros + '\n');
 
-                            System.err.println("� " + lToken.name + ",mas espera-se "
+                            System.err.println("linha " + lToken.numberLine + ": " + lToken.name + ",mas espera-se "
                                             + t.name());
                     } else if (t == EnumToken.RETURN) {
                             Erros = Erros
-                                            + ("� " + lToken.name + ",mas espera-se " + t.name());
+                                            + ("linha " + lToken.numberLine + ": " + lToken.name + ",mas espera-se " + t.name());
                             Erros = (Erros + '\n');
 
-                            System.err.println("� " + lToken.name + ",mas espera-se "
+                            System.err.println("linha " + lToken.numberLine + ": " + lToken.name + ",mas espera-se "
                                             + t.name());
                     } else if (t == EnumToken.EOF) {
                             Erros = Erros
-                                            + ("� " + lToken.name + ",mas espera-se " + t.name());
+                                            + ("linha " + lToken.numberLine + ": " + lToken.name + ",mas espera-se " + t.name());
                             Erros = (Erros + '\n');
 
-                            System.err.println("� " + lToken.name + ",mas espera-se "
+                            System.err.println("linha " + lToken.numberLine + ": " + lToken.name + ",mas espera-se "
                                             + t.name());
                     }
                     MainWindow.areaParaExibir.setText(Erros);
@@ -294,9 +294,9 @@ public class Parser
 
     private void error(String conjunto) 
     {
-        Erros = Erros + ("� " + lToken.name + ",mas espera-se " + conjunto);
+        Erros = Erros + ("linha " + lToken.numberLine + ": " + lToken.name + ",mas espera-se " + conjunto);
         Erros = (Erros + '\n');
-        System.err.println("� " + lToken.name + ",mas espera-se " + conjunto);
+        System.err.println("linha " + lToken.numberLine + ": " + lToken.name + ",mas espera-se " + conjunto);
     }
 
     // 1 - nao precisa
@@ -513,7 +513,7 @@ public class Parser
         }
         else
         {
-            error("INT || STRING || ID");
+            error("INT ou STRING ou ID");
         }
     }
 
@@ -583,7 +583,7 @@ public class Parser
 
         else
         {
-            error("INT || STRING || ID");
+            error("INT ou STRING ou ID");
         }
     }
 
@@ -609,7 +609,7 @@ public class Parser
         }
         else
         {
-            error("INT || STRING || ID");
+            error("INT ou STRING ou ID");
         }
     }
 
@@ -708,7 +708,7 @@ public class Parser
         }
         else
         {
-            error("INT || STRING || ID");
+            error("INT ou STRING ou ID");
         }
     }
 
@@ -735,7 +735,7 @@ public class Parser
         }
         else
         {
-            error("INT || STRING || ID");
+            error("INT ou STRING ou ID");
         }
     }
 
@@ -768,7 +768,7 @@ public class Parser
         }
         else
         {
-            error("ID || [");
+            error("ID ou [");
         } 
     }
 
@@ -910,7 +910,7 @@ public class Parser
 
         else
         {
-            error("INT || STRING || ID || PRINT || READ || RETURN || SUPER || IF || FOR || BREAK");
+            error("INT ou STRING ou ID ou PRINT ou READ ou RETURN ou SUPER ou IF ou FOR ou BREAK");
         }
     }
 
@@ -944,7 +944,7 @@ public class Parser
 
         else
         {
-            error("+ || -");
+            error("+ ou -");
         }
     }
 
@@ -1221,7 +1221,7 @@ public class Parser
         }
         else
         {
-            error("[ || . || = || * || / || % || + || - || RELOP || ) || ] || , || ;");
+            error("[ ou . ou = ou * ou / ou % ou + ou - ou RELOP ou ) ou ] ou , ou ;");
         }
     }
 
@@ -1244,12 +1244,6 @@ public class Parser
 
         //epsulon
     }
-
-    //47 -
-    /*public void LValueComp_line()
-    {
-
-    }*/
 
     //48 - no error
     public void Expression()
@@ -1325,7 +1319,7 @@ public class Parser
         }
         else
         {
-            error("NEW || INT || STRING || ID");
+            error("NEW ou INT ou STRING ou ID");
         }
     }
 
@@ -1377,7 +1371,7 @@ public class Parser
         }
         else
         {
-            error("+ || -");
+            error("+ ou -");
         }
     }
 
@@ -1407,7 +1401,7 @@ public class Parser
         }
         else
         {
-            error("INTEGER_LITERAL || STRING_LITERAL || ID || (");
+            error("INTEGER_LITERAL ou STRING_LITERAL ou ID ou (");
         }
     }
 
@@ -1519,7 +1513,7 @@ public class Parser
             }
             else
             {
-                error("} || + || -");
+                error("} ou + ou -");
             }
         }
         else if(lToken.name == EnumToken.COMMA)
@@ -1545,7 +1539,7 @@ public class Parser
         }
         else
         {
-            error("ID || { || ,");
+            error("ID ou { ou ,");
         }
     }
 }
